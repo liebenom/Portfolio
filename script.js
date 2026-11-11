@@ -1,6 +1,19 @@
 // Footer year
 document.getElementById("year").textContent = new Date().getFullYear();
 
+// Light / dark mode toggle
+const themeBtn = document.querySelector(".theme-toggle");
+function setTheme(t) {
+  document.documentElement.setAttribute("data-theme", t);
+  themeBtn.setAttribute("aria-label", t === "dark" ? "Switch to light mode" : "Switch to dark mode");
+  try { localStorage.setItem("theme", t); } catch (e) {}
+}
+themeBtn.setAttribute("aria-label",
+  document.documentElement.getAttribute("data-theme") === "dark" ? "Switch to light mode" : "Switch to dark mode");
+themeBtn.addEventListener("click", () => {
+  setTheme(document.documentElement.getAttribute("data-theme") === "dark" ? "light" : "dark");
+});
+
 // Mobile menu
 const toggle = document.querySelector(".nav-toggle");
 const links = document.querySelector(".nav-links");

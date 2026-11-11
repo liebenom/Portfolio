@@ -5,11 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Rica Michelle Booc — Digital Portfolio</title>
   <meta name="description" content="Digital portfolio of Rica Michelle S. Booc, BS Information Systems student at STI College Valencia." />
-  <meta name="theme-color" content="#f6f3ee" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
+  <script>
+    // Apply saved or device theme before the page draws (avoids a flash)
+    (function () {
+      var t = null;
+      try { t = localStorage.getItem("theme"); } catch (e) {}
+      if (!t) t = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+      document.documentElement.setAttribute("data-theme", t);
+    })();
+  </script>
 </head>
 <body>
   <a href="#main" class="skip">Skip to main content</a>
@@ -26,6 +34,9 @@
       <a href="#education">Education</a>
       <a href="#contact" class="nav-cta">Contact</a>
     </nav>
+    <button class="theme-toggle" type="button" aria-label="Switch to dark mode" title="Switch light / dark mode">
+      <span class="icon-moon">🌙</span><span class="icon-sun">☀️</span>
+    </button>
   </header>
 
   <main id="main">
@@ -236,6 +247,7 @@
 
       <ul class="socials">
         <li><a href="mailto:ricamichelle114@gmail.com">ricamichelle114@gmail.com</a></li>
+        <li><a href="tel:+639667047799">0966 704 7799</a></li>
         <li><a href="resume.pdf" target="_blank">Résumé</a></li>
         <li><a href="https://github.com/liebenom" target="_blank">GitHub</a></li>
         <!-- EDIT: add LinkedIn when ready
