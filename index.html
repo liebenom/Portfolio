@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rica Michelle Booc — Digital Portfolio</title>
+  <meta name="description" content="Digital portfolio of Rica Michelle S. Booc, BS Information Systems student at STI College Valencia." />
+  <meta name="theme-color" content="#f6f3ee" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <a href="#main" class="skip">Skip to main content</a>
+
+  <!-- ========== NAVIGATION ========== -->
+  <header class="nav">
+    <a href="#top" class="brand">Rica Michelle Booc</a>
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
+    <nav class="nav-links">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#achievements">Achievements</a>
+      <a href="#education">Education</a>
+      <a href="#contact" class="nav-cta">Contact</a>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <!-- ========== HERO ========== -->
+    <section class="hero" id="top">
+      <div class="hero-text">
+        <p class="eyebrow">BSIS Student — Valencia City, Bukidnon</p>
+        <h1>Rica Michelle <span class="hl">Booc</span></h1>
+        <p class="tagline">I design and build web systems that solve everyday problems.</p>
+        <p class="hero-sub">
+          Information Systems student at STI College Valencia, with a focus on databases,
+          systems analysis, and building web systems and apps.
+        </p>
+        <ul class="chips">
+          <li>Web Systems</li>
+          <li>App Development</li>
+          <li>Databases</li>
+          <li>Java</li>
+        </ul>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">View projects</a>
+          <a href="resume.pdf" class="btn btn-ghost" target="_blank">Download résumé</a>
+        </div>
+      </div>
+      <div class="hero-photo">
+        <span class="circle"></span>
+        <img src="photo.jpg" alt="Portrait of Rica Michelle Booc" />
+      </div>
+    </section>
+
+    <!-- ========== ABOUT ========== -->
+    <section id="about" class="section reveal">
+      <p class="label">01 — About</p>
+      <h2>A little <span class="hl">about me</span></h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>I'm a Bachelor of Science in Information Systems student at <strong>STI College Valencia</strong>, from Valencia City, Bukidnon. I'm interested in systems analysis, database management, and web development.</p>
+          <p>Outside class, I compete. I've joined Codefest, Think Quest, and our city hackathon, and I like the pressure of solving problems with a team on a deadline.</p>
+          <p>I enjoy building web systems and apps that make everyday tasks easier, like <strong>MyDentist</strong>, an online booking system for a dental clinic.</p>
+        </div>
+        <ul class="stats">
+          <li><strong>2</strong><span>Championships</span></li>
+          <li><strong>3</strong><span>Think Quest podium finishes</span></li>
+          <li><strong>6</strong><span>Awards &amp; certifications</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ========== SKILLS ========== -->
+    <section id="skills" class="section reveal">
+      <p class="label">02 — Skills</p>
+      <h2>What I <span class="hl">bring</span></h2>
+      <div class="skills">
+        <div class="skill-group">
+          <h3>Development</h3>
+          <ul>
+            <li>Web System Development</li>
+            <li>App Development</li>
+            <li>Web Development — HTML, CSS, JavaScript</li>
+            <li>Programming — Java, Kotlin, Python</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3>Data &amp; Tools</h3>
+          <ul>
+            <li>Database Management</li>
+            <li>Microsoft Office</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== PROJECTS ========== -->
+    <section id="projects" class="section reveal">
+      <p class="label">03 — Projects</p>
+      <h2>Things I've <span class="hl">built</span></h2>
+      <div class="work-grid">
+
+        <article class="work featured-work">
+          <div class="work-img">
+            <a href="mydentist/" target="_blank"><img src="mydentist.png" alt="Home page of the MyDentist Dental Clinic booking system" /></a>
+          </div>
+          <div class="work-body">
+            <p class="work-kicker">Web System · Online Booking</p>
+            <h3>MyDentist — Dental Clinic Booking System</h3>
+            <p>An online appointment system for MyDentist Dental Clinic. Patients can check open schedules, choose from 10 dental services, and book a visit any time of the day without waiting in line.</p>
+            <ul class="feature-list">
+              <li>Live view of open time slots per service</li>
+              <li>Patient accounts, plus guest booking with a QR code for check-in</li>
+              <li>Admin side for managing the clinic's schedule and bookings</li>
+              <li>Language switcher</li>
+            </ul>
+            <ul class="tags"><li>Web System</li><li>Online Booking</li><li>QR Check-in</li><li>Admin Panel</li></ul>
+            <div class="work-links">
+              <a href="mydentist/" target="_blank">View live demo ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- EDIT: to add another project, copy this block and remove the comment marks.
+        <article class="work">
+          <div class="work-img">
+            <img src="project2.jpg" alt="Screenshot of Project Two" />
+          </div>
+          <div class="work-body">
+            <h3>Project Two</h3>
+            <p>What it is, the problem it solves, and your role in it.</p>
+            <ul class="tags"><li>Java</li></ul>
+            <div class="work-links"><a href="#" target="_blank">View ↗</a></div>
+          </div>
+        </article>
+        -->
+
+      </div>
+    </section>
+
+    <!-- ========== ACHIEVEMENTS & CERTIFICATES ========== -->
+    <section id="achievements" class="section reveal">
+      <p class="label">04 — Awards</p>
+      <h2>Competitions &amp; <span class="hl">recognition</span></h2>
+      <div class="achievements">
+        <article class="achievement featured">
+          <span class="year">2026</span>
+          <span class="place">Champion</span>
+          <h3>Tagisan ng Talino: Think Quest</h3>
+        </article>
+        <article class="achievement featured">
+          <span class="year">2024</span>
+          <span class="place">Local Champion</span>
+          <h3>Tagisan ng Talino: Codefest</h3>
+        </article>
+        <article class="achievement">
+          <span class="year">2026</span>
+          <span class="place">1st Runner Up</span>
+          <h3>Tagisan ng Talino: Think Quest</h3>
+        </article>
+        <article class="achievement">
+          <span class="year">2025</span>
+          <span class="place">1st Runner Up</span>
+          <h3>Tagisan ng Talino: Think Quest</h3>
+        </article>
+        <article class="achievement">
+          <span class="year">2024</span>
+          <span class="place">Certification</span>
+          <h3>Oracle Academy: Java Fundamentals</h3>
+        </article>
+        <article class="achievement">
+          <span class="year">2024</span>
+          <span class="place">Participant</span>
+          <h3>City Hackathon</h3>
+        </article>
+      </div>
+
+    </section>
+
+
+    <!-- ========== EDUCATION ========== -->
+    <section id="education" class="section reveal">
+      <p class="label">05 — Education</p>
+      <h2>Where I <span class="hl">studied</span></h2>
+      <ol class="timeline">
+        <li>
+          <span class="when">2023 — Present</span>
+          <div>
+            <h3>BS Information Systems · <em>STI College Valencia</em></h3>
+            <p>Focus on systems analysis, databases, and IT.</p>
+          </div>
+        </li>
+        <li>
+          <span class="when">2024</span>
+          <div>
+            <h3>Java Fundamentals · <em>Oracle Academy</em></h3>
+            <p>Certification.</p>
+          </div>
+        </li>
+        <li>
+          <span class="when">2020 — 2022</span>
+          <div>
+            <h3>Senior High School · <em>Valencia National High School</em></h3>
+          </div>
+        </li>
+        <li>
+          <span class="when">2016 — 2020</span>
+          <div>
+            <h3>Junior High School · <em>Valencia National High School</em></h3>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <!-- ========== CONTACT ========== -->
+    <section id="contact" class="section contact reveal">
+      <p class="label">06 — Contact</p>
+      <h2>Get in <span class="hl">touch</span></h2>
+      <p class="contact-lead">Have a question or want to work together? Send me a message and I'll get back to you.</p>
+
+      <!-- EDIT: sign up free at formspree.io, create a form, and paste your form ID below -->
+      <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+        <div class="field-row">
+          <label>Name<input type="text" name="name" required /></label>
+          <label>Email<input type="email" name="email" required /></label>
+        </div>
+        <label>Message<textarea name="message" rows="5" required></textarea></label>
+        <button type="submit" class="btn btn-primary">Send message</button>
+        <p class="form-status" role="status"></p>
+      </form>
+
+      <ul class="socials">
+        <li><a href="mailto:ricamichelle114@gmail.com">ricamichelle114@gmail.com</a></li>
+        <li><a href="resume.pdf" target="_blank">Résumé</a></li>
+        <li><a href="https://github.com/liebenom" target="_blank">GitHub</a></li>
+        <!-- EDIT: add LinkedIn when ready
+        <li><a href="https://linkedin.com/in/yourusername" target="_blank">LinkedIn</a></li>
+        -->
+      </ul>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Rica Michelle S. Booc · BS Information Systems</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
